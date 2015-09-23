@@ -1,2 +1,8 @@
 {{yield}}
-{{post.title}} {{post.content}} {{post.author}} {{post.date}}
+
+<div class="container index-post">
+  <dt><h3>{{post.title}}</h3></dt><br>
+  <dd><img src="{{post.image}}"></dd><br>
+  Author: {{post.author}} <br>
+  Date: {{post.date}}
+</div>

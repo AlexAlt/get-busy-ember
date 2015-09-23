@@ -9,3 +9,19 @@
 h1 {
   text-align:center;
 }
+
+.index-post {
+  border: solid;
+  margin: 5px auto;
+}
+
+dt {
+  border-bottom: solid;
+  display: inline;
+  text-align:center;
+}
+
+img {
+  width: 33%
+
+}
