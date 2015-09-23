@@ -1,0 +1,11 @@
+/*.container-fluid {
+  background-color:#4188D9;
+
+}
+
+.container-fluid :hover {
+  background-color:#19569C;
+}*/
+h1 {
+  text-align:center;
+}
