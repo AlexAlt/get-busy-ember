@@ -1,17 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-
   actions: {
-    save() {
-      var params = {
-        date: this.get('date'),
-        title: this.get('title'),
-        author: this.get('author'),
-        image: this.get('image'),
-        content: this.get('content'),
-      };
-        this.sendAction('save', params);
+    save(params) {
+      var newPost = this.store.createRecord('post', params);
+      newPost.save();
+      this.transitionTo('index');
     }
   }
 });
