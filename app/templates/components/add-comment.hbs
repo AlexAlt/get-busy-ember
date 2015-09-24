@@ -1,0 +1,19 @@
+  <div class="container">
+    {{#if addCommentForm}}
+     <form>
+       <div class="form-group">
+          <label for="username">Username</label>
+          {{input class="form-control" value=username id="username"}}
+        </div>
+
+        <div class="form-group">
+          <label for="content">Content</label>
+          {{textarea class="form-control" rows="20" value=content id="content"}}
+        </div>
+
+       <button style="border-width: thick; background-color:gray; color:white;" {{action 'saveComment'}}>Save</button>
+     </form>
+     {{else}}
+       <button class="btn btn-primary btn-sm" {{action 'addCommentForm'}}>Add</button>
+       {{/if}}
+   </div>
