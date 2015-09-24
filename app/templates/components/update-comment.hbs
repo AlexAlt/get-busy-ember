@@ -1,0 +1,20 @@
+<div class="container">
+  {{#if updatePostForm}}
+       <form>
+             <div class="form-group">
+               <label for="username">Username</label>
+               {{input class="form-control" value=username id="username"}}
+             </div>
+
+             <div class="form-group">
+               <label for="content">Content</label>
+               {{textarea class="form-control" rows="20" value=content id="content"}}
+             </div>
+
+         <button style="border-width: thick; background-color:gray; color:white;" {{action 'updateComment' post}}>Save</button>
+       </form>
+  {{else}}
+    <button class="btn btn-primary btn-sm" {{action 'updateCommentForm'}}>Update</button>
+    {{/if}}
+    <button class="btn btn-danger btn-sm" {{action 'deleteComment' comment}}>Delete</button>
+</div>
