@@ -1,8 +1,7 @@
 <h1>Get Busy Portland!</h1>
 <dl>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-canvas post=post}}
   {{/each}}
-
-
 </dl>
+  {{latest-posts}}
