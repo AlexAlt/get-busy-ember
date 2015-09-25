@@ -1,5 +1,5 @@
 <div class="container">
-  {{#if updatePostForm}}
+  {{#if updateCommentForm}}
        <form>
              <div class="form-group">
                <label for="username">Username</label>
@@ -11,7 +11,7 @@
                {{textarea class="form-control" rows="2" value=content id="content"}}
              </div>
 
-         <button style="border-width: thick; background-color:gray; color:white;" {{action 'updateComment' post}}>Save</button>
+         <button style="border-width: thick; background-color:gray; color:white;" {{action 'updateComment' comment}}>Save</button>
        </form>
   {{else}}
     <button class="btn btn-primary btn-sm" {{action 'updateCommentForm'}}>Update</button>
