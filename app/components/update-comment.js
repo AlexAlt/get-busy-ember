@@ -14,7 +14,7 @@ actions: {
     }
   },
 
-  update(post){
+  updateComment(post){
     var params = {
       username: this.get('username'),
       content: this.get('content')

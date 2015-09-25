@@ -23,7 +23,7 @@ export default Ember.Route.extend({
 
     destroyComment(comment){
       comment.destroyRecord();
-      this.transitionTo('index')
+      this.transitionTo('post')
     },
 
     saveComment(params){
@@ -31,6 +31,7 @@ export default Ember.Route.extend({
       newComment.save();
       params.post.save();
       this.transitionTo('post');
+      location.reload();
     }
   }
 });
