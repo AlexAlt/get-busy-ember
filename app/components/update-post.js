@@ -4,8 +4,12 @@ export default Ember.Component.extend({
   updatePostForm: false,
 
   actions: {
-    updatePostForm() {
+    openPostForm() {
       this.set('updatePostForm', true);
+    },
+
+    closePostForm() {
+      this.set('updatePostForm', false);
     },
 
     delete(post){

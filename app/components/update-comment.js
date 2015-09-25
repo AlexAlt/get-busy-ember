@@ -4,8 +4,12 @@ export default Ember.Component.extend({
 updateCommentForm: false,
 
 actions: {
-  updateCommentForm() {
+  openCommentForm() {
     this.set('updateCommentForm', true);
+  },
+
+  closeCommentForm() {
+    this.set('updateCommentForm', false);
   },
 
   deleteComment(post){

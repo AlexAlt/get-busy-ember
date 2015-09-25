@@ -1,4 +1,4 @@
-  <div class="container">
+  <div class="container add-comment">
     {{#if addCommentForm}}
      <form>
        <div class="form-group">
@@ -10,10 +10,12 @@
           <label for="content">Content</label>
           {{textarea class="form-control" rows="2" value=content id="content"}}
         </div>
-
+        <div class="form-group">
        <button style="border-width: thick; background-color:gray; color:white;" {{action 'saveComment'}}>Save</button>
+       <button style="border-width: thick; background-color:gray; color:white;" {{action 'closeAddCommentForm'}}>Close Form</button>
+     </div>
      </form>
      {{else}}
-       <button class="btn btn-primary btn-sm" {{action 'addCommentForm'}}>Add</button>
+       <button class="btn btn-primary btn-sm" {{action 'openAddCommentForm'}}>Add</button>
        {{/if}}
    </div>

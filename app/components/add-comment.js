@@ -4,9 +4,13 @@ export default Ember.Component.extend({
   addCommentForm: false,
 
   actions: {
-    addCommentForm() {
+    openAddCommentForm() {
     this.set('addCommentForm', true);
   },
+
+  closeAddCommentForm() {
+  this.set('addCommentForm', false);
+},
 
     saveComment() {
       var params = {
